@@ -1,7 +1,7 @@
 # Temperature-Controlled Fan System
 
 ## Project Description
-This embedded project automatically controls a fan's speed based on real-time temperature readings from a sensor. It uses PWM for variable fan speed (faster when hot) and LEDs to indicate status (red for hot, green for cool). The system demonstrates intelligent thermal management, ideal for electronics cooling in VLSI applications.
+This embedded project automatically controls a fan's speed based on real-time temperature readings from a sensor. It uses PWM for variable fan speed (faster when hot) and LEDs to indicate status (red for hot, green for cool). The system demonstrates intelligent thermal management.
 
 **Key Features**:
 - Temperature polling via ADC (analog-to-digital conversion).
@@ -48,9 +48,6 @@ See `circuit_diagram.txt` for wiring. Key connections:
 - If temp > 30°C: Fan high speed, red LED on.
 - If temp < 20°C: Fan low/off, green LED on.
 - Monitor via serial (add UART if needed).
-
-## Demo
-[Add video link: e.g., YouTube of fan speeding up with heat source.]
 
 ## Future Enhancements
 - IoT integration for remote monitoring.
