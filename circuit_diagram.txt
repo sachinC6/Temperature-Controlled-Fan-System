@@ -1,0 +1,25 @@
+Temperature-Controlled Fan System - Circuit Diagram (Text-Based)
+Based on NIELIT Course Day 5: Embedded Hardware, GPIO/ADC
+
+Connections for STM32 Nucleo G474:
+- Power: Nucleo 3.3V/GND to breadboard.
+- Temperature Sensor (LM35):
+  - VCC to 3.3V, GND to GND, OUT to PA0 (ADC input).
+- Fan (via L298N Motor Driver):
+  - Motor+ to L298N OUT1, Motor- to OUT2.
+  - L298N IN1/IN2 to PB6/PB7 (or use PWM on PA5 for speed).
+  - Enable A to PA5 (TIM2_CH1 PWM output).
+- LEDs (Status):
+  - Red LED: Anode to PB0 via 220Ω resistor, Cathode to GND.
+  - Green LED: Anode to PB1 via 220Ω resistor, Cathode to GND.
+- Buzzer (optional): Positive to PB2, Negative to GND.
+
+Visual Layout:
+[STM32 Nucleo Board]
+     |
+     |--- PA0 (ADC) --> LM35 OUT
+     |--- PA5 (PWM) --> L298N Enable A --> Fan
+     |--- PB0 --> Red LED
+     |--- PB1 --> Green LED
+
+Test: Use heat source (finger on LM35) to see fan/LED response. For graphical, draw in Fritzing and upload as PNG.
