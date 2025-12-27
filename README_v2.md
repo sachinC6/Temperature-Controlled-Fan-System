@@ -37,7 +37,7 @@ See `circuit_diagram.txt` for wiring. Key connections:
 - LEDs: Red to PB0, Green to PB1 (GPIO outputs).
 
 ## Installation and Setup
-1. Clone repo: `git clone https://github.com/yourusername/Temperature-Controlled-Fan-System.git`
+1. Clone repo: `git clone https://github.com/sachinC6/Temperature-Controlled-Fan-System.git`
 2. Open `main.c` in STM32CubeIDE.
 3. Configure ADC (PA0) and PWM (TIM2 on PA5) in the IDE's Pinout & Configuration tab.
 4. Generate code, compile, and flash to Nucleo.
